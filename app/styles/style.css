@@ -1,0 +1,1308 @@
+body{
+
+    background: #ffffff;
+
+    /*background: url("../img/bg/blogGreenBG.png") no-repeat #7faf3f top center;*/
+
+    //color: white;
+
+}
+
+
+
+.fullBoundary.blogType{
+
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+
+}
+
+
+
+article h1{
+
+    text-transform: uppercase;
+
+    font-family: 'PT Sans';
+
+    letter-spacing: 1.2px;
+
+}
+
+
+
+nav#mainNav ul li a{
+
+    //color: #fff;
+
+}
+
+
+
+article p{
+
+    font-family: 'Droid Serif';
+
+}
+
+
+
+.filterPosts{
+
+    float: left;
+
+    width: 960px;
+
+    margin: 10px 0;
+
+    border-radius:4px;
+
+    background: #212121;
+
+    background: rgba(0,0,0,0.85);
+
+    //box-shadow:0 0 3px rgba(0,0,0,0.85);
+
+    //position: absolute;
+
+}
+
+
+
+.filterPosts span{
+
+    float: left;
+
+    margin: 10px 10px 10px 30px;
+
+    color: white;
+
+    text-transform: uppercase;
+
+    font-weight: bold;
+
+}
+
+
+
+.filterPosts div{
+
+    float: right;
+
+    margin: 13px 20px 7px 10px;
+
+}
+
+
+
+.filterPosts ul{
+
+    list-style-type: none;
+
+    float: left;
+
+}
+
+
+
+.filterPosts ul li.group{
+
+    padding: 10px;
+
+    float: left;
+
+    position: relative;
+
+}
+
+
+
+.filterPosts ul li.group a{
+
+    color: white;
+
+}
+
+
+
+.filterPosts ul li.group a.groupLink{
+
+    display: block;
+
+    //width: 99px;
+
+    padding: 0 10px;
+
+    height: 21px;
+
+    background: url("../img/bg/groupLinkBG.png") repeat-x;
+
+    text-align: center;
+
+    border-radius:11px;
+
+    border-top: 1px solid #717174;
+
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+
+    font-size: 12px;
+
+    //font-weight: bold;
+
+    color: #ddd;
+
+    text-shadow: 0 -1px 0 #000;
+
+}
+
+
+
+.filterPosts ul li.group a.groupLink:hover{
+
+    background: url("../img/bg/groupLinkBGHover.png") repeat-x;
+
+}
+
+
+
+.filterPosts ul li ul.subGroup{
+
+    margin: 0;
+
+    padding: 0;
+
+    position: absolute;
+
+    width: 380px;
+
+    //background: url("../img/bg/blogFilterBG.png") repeat;	
+
+    background: rgba(0,0,0,0.9);
+
+    border-top: 1px solid black;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    top: 41px;
+
+    //border-radius: 0 0 4px 4px;
+
+    display: none;
+
+    left: -10px;
+
+	z-index: 101;
+
+}
+
+
+
+.filterPosts ul li ul.subGroup.social{
+
+    width: 190px;
+
+}
+
+
+
+.filterPosts ul li ul.subGroup.hover{
+
+    display: block;
+
+}
+
+
+
+.filterPosts ul li ul.subGroup li{
+
+    display: block;
+
+    float: left;
+
+    padding: 10px 0;
+
+    width: 190px;
+
+    position: relative;
+
+    border-bottom: 1px solid black;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+
+}
+
+
+
+.filterPosts ul li ul.subGroup li a{
+
+    margin: 0 0 0 20px;
+
+    color: #999;
+
+    text-shadow: 0 -2px 0 #000;
+
+}
+
+
+
+.filterPosts ul li ul.subGroup li a:hover{
+
+    color: #fff;
+
+    border-bottom: 1px dashed;
+
+}
+
+
+
+input.postSearch{
+
+	//background: url("../img/bg/postSearchBG.png") no-repeat;
+
+	background: white url('../img/bg/searchIcon.png') center left no-repeat;
+
+	background-position: 6px 4px;
+
+	border: none;
+
+	display: block;
+
+	height: 16px;
+
+	margin: 8px 20px 0 0;
+
+	padding: 4px 10px 4px 25px;
+
+	width: 110px;
+
+	float: right;
+
+	border-radius: 20px;
+
+	-webkit-border-radius: 20px;
+
+	-moz-border-radius: 20px;
+
+	-o-border-radius: 20px;
+
+	-webkit-transition: all 0.3s ease 0s;
+
+	-moz-transition: all 0.3s ease 0s;
+
+	-o-transition:  all 0.3s ease 0s;
+
+        box-shadow: 0 1px 2px #404040 inset;
+
+}
+
+
+
+input.postSearch:focus{
+
+	background: white url('../img/bg/searchIconClick.png') center left no-repeat;
+
+	background-position: 6px 4px;
+
+	width: 150px;
+
+}
+
+
+
+article.mainFeatExcerpt{
+
+    width: 700px;
+
+    padding: 40px 130px;
+
+    float: left;
+
+    /*border-top: 1px solid rgba(255,255,255,0.3);*/
+
+}
+
+
+
+article.mainFeatExcerpt .postTitle a h1{
+
+    font-size: 30px;
+
+    line-height: 0.9em;
+
+}
+
+
+
+.smallFeatured .postTitle a h1{
+
+    font-size: 22px;
+
+    line-height: 1.2;
+
+}
+
+
+
+.smallFeatured .postTitle a.catOfFeat h1{
+
+    margin-bottom: 5px;
+
+}
+
+
+
+.otherBlogs .postTitle a h1{
+
+    font-size: 20px;
+
+    line-height: 1.2;
+
+}
+
+
+
+.postMeta{
+
+    margin-top: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.otherBlogs .postMeta{
+
+    margin-top: 0px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.otherBlogs article{
+
+    margin-bottom: 40px;
+
+}
+
+
+
+.postTitle a{
+
+    color: #000;
+
+}
+
+
+
+.postMeta h3{
+
+    font-size: 14px;
+
+    letter-spacing:1.2px;
+
+    text-transform: uppercase;
+
+}
+
+
+
+.otherBlogs .postMeta h3{
+
+    font-size: 12px;
+
+}
+
+
+
+.smallFeatured .postMeta h3{
+
+    font-size: 12px;
+
+    letter-spacing:1.2px;
+
+    text-transform: uppercase;
+
+}
+
+
+
+.postMeta i{
+
+    font-family: 'Droid Serif';
+
+    text-transform: lowercase;
+
+
+
+}
+
+
+
+.postAuthor{
+
+    color: #000;
+
+    border-bottom: 1px dashed;
+
+}
+
+
+
+.postAuthor:hover{
+
+    color: #009383;
+
+}
+
+
+
+a.postLink{
+
+    color: rgba(0,0,0,0.7);
+
+    border-bottom: 1px dashed;
+
+    float: right;
+
+}
+
+
+
+a.postLink:hover{
+
+    color: #009383;
+
+}
+
+
+
+.blogInfo{
+
+    float: left;
+
+    color: #009383;
+
+    border-bottom: 1px solid #009383;
+
+    border-top: 1px solid #009383;
+
+    padding: 20px;
+
+}
+
+
+
+.blogInfo h1{
+
+    float: left;
+
+    font-size: 60px;
+
+    font-family: 'Droid Sans';
+
+    width: 180px;
+
+    padding: 43px 40px;
+
+}
+
+
+
+.blogInfo p{
+
+    float: left;
+
+    font-family: 'Droid Serif';
+
+    width: 600px;
+
+}
+
+
+
+section.smallFeatured{
+
+    float: left;
+
+    margin-top: 40px;
+
+    margin-bottom: 60px;
+
+}
+
+
+
+section.smallFeatured article{
+
+    float: left;
+
+    width: 199px;
+
+    margin-right: 20px;
+
+    padding-right: 20px;
+
+    border-right: 1px solid rgba(255,255,255,0.3);
+
+    //height: 400px;
+
+}
+
+
+
+.otherBlogs{
+
+    float: left;
+
+    width: 620px;
+
+    padding-right: 60px;
+
+    margin-bottom: 60px;
+
+    //border-right: 1px solid;
+
+}
+
+
+
+section.postComments{
+
+    float: left;
+
+    width: 660px;
+
+}
+
+
+
+aside.tweets{
+
+    float: left;
+
+    width: 280px;
+
+    background: url("../img/bg/tweetsBG.png") no-repeat;
+
+    //padding: 0 0 0 60px;
+
+}
+
+
+
+aside.tweets header{
+
+    //margin-bottom: 82px;
+
+    padding: 31px 0 56px 20px;
+
+}
+
+
+
+aside.tweets header a h1{
+
+    color: black;
+
+    font-size: 24px;
+
+}
+
+
+
+aside.tweets article, aside.tweets article p{
+
+    font-family: 'Droid Sans';
+
+}
+
+
+
+aside.tweets article{
+
+    padding: 20px;
+
+    border-bottom: 1px dashed rgba(0,0,0,0.2);
+
+    float: left;
+
+    background: rgba(255,255,255,0.6);
+
+}
+
+
+
+aside.tweets article a{
+
+    color: black;
+
+    border-bottom: 1px dashed;
+
+}
+
+
+
+aside.tweets article a:hover{
+
+    color:green;
+
+}
+
+
+
+aside.tweets div{
+
+    width: 280px;
+
+    height: 52px;
+
+    background: url("../img/bg/tweetsBottomBG.png") no-repeat;
+
+    float: left;
+
+}
+
+
+
+.tweetPosted{
+
+    color: rgba(0,0,0,0.5);
+
+}
+
+
+
+#postSection{
+
+    float: left;
+
+    width: 860px;
+
+    margin-top: 40px;
+
+    margin-left: 100px;
+
+}
+
+
+
+.sharePost{
+
+    float: left;
+
+    width: 100px;
+
+}
+
+
+
+#thePost{
+
+    width: 800px;
+
+    float: left;
+
+    padding: 30px 30px;
+
+    border-radius: 2px;
+
+    background: rgba(255,255,255,0.75);
+
+}
+
+
+
+#thePost .postTitle h1{
+
+    font-size: 22px;
+
+    //color: #007f9f;
+
+}
+
+
+
+#thePost .postMeta h3{
+
+    font-size: 13px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 2px dotted;
+
+}
+
+
+
+#thePost .postMeta h3 a{
+
+    color: #20887D;
+
+}
+
+
+
+#thePost .postMeta h3 a:hover{
+
+    color: #000;
+
+}
+
+
+
+#thePost .postMeta{
+
+    margin-top: 5px;
+
+}
+
+
+
+#thePost .postMeta h4{
+
+    font-size: 11px;
+
+    margin-top: 20px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid black;
+
+    text-transform: uppercase;
+
+    display: none;
+
+    text-align: right;
+
+}
+
+
+
+.sharePost img {
+
+    display: block;
+
+    margin: 10px 0;
+
+    width: 25px;
+
+}
+
+
+
+#thePost .postMeta h4 a{
+
+    color: #1291b1;
+
+    border-bottom: 1px dashed;
+
+}
+
+
+
+#thePost p{
+
+    margin-bottom: 20px;
+
+}
+
+
+
+#thePost p a, #thePost a{
+
+    color: #20887D;
+
+    border-bottom: 1px dashed;
+
+}
+
+
+
+#thePost p a:hover, #thePost a:hover{
+
+    color: #000;
+
+}
+
+
+
+.popularPosts{
+
+    float: right;
+
+    display: block;
+
+    width: 220px;
+
+    //padding: 20px;
+
+    //background: rgba(255,255,255,0.75);
+
+    border-radius: 2px;
+
+    margin-top: 40px;
+
+    margin-left: 40px;
+
+}
+
+.popularPosts header#popPost h1{
+
+    border-bottom: 1px dashed;
+
+    margin-bottom: 25px;
+
+    padding: 5px 10px;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    //background: rgba(255,255,255,0.2);
+
+}
+
+
+
+.popularPosts .sidePosts{
+
+    //border-bottom: 1px dashed #577A25;
+
+    margin: 30px 0;
+
+}
+
+
+
+.popularPosts .sidePosts header.postTitle a{
+
+    font-size: 11px;
+
+    line-height: 15px;
+
+    padding-bottom: 5px;
+
+}
+
+.popularPosts .sidePosts header.postTitle a:hover{
+
+    color: #fff;
+
+}
+
+.popularPosts .sidePosts footer{
+
+    margin: 5px 0 15px 0;
+
+}
+
+.popularPosts .sidePosts footer h3{
+
+    letter-spacing: 0.8px;
+
+    line-height: 20px;
+
+    font-weight: normal;
+
+}
+
+.popularPosts .sidePosts footer h3 i{
+
+    font-size: 10px;
+
+}
+
+.popularPosts .sidePosts footer h3 strong, .popularPosts .sidePosts footer h3 time{
+
+    font-size: 10px;
+
+    font-weight: normal;
+
+}
+
+.postTags{
+
+    float: left;
+
+}
+
+.postTagsCat h3{
+
+    float: left;
+
+    margin-right: 10px;
+
+    font-size: 13px;
+
+}
+
+
+
+.postTagsCat h3 i{
+
+    font-family: 'Droid Serif';
+
+    text-transform: lowercase;
+
+}
+
+.postTagsCat a, .tagged {
+
+    color: #518D00;
+
+    border-bottom: 1px dashed;
+
+    text-transform: uppercase;
+
+}
+
+.tagged:hover{
+
+    color: #000;
+
+}
+
+#comment{
+
+    float: left;
+
+    padding: 30px 30px 30px 0;
+
+    width: 570px;
+
+    margin-left: 100px;
+
+}
+
+#comment header h1{
+
+    font-size: 22px;
+
+    //float: left;
+
+}
+
+#comment header a.leaveResponse{
+
+    font-family: 'Droid Serif';
+
+    text-transform: lowercase;
+
+    color: black;
+
+    border-bottom: 1px dashed;
+
+}
+
+
+
+#comment header a.leaveResponse:hover{
+
+    color: #fff;
+
+}
+
+
+
+.commentPost{
+
+    float: left;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px dashed #085568;
+
+    /*border-bottom: 2px dotted;*/
+
+}
+
+/*.commentPost:hover p{
+
+	color: #e1fdbd;
+
+}*/
+
+.commentPost header{
+
+    float: left;
+
+    margin: 20px 20px 10px 0;
+
+}
+
+.commentPost header img{
+
+    vertical-align: text-top;
+
+    border: 1px solid #525252;
+
+    padding: 1px;
+
+}
+
+.commentPost footer{
+
+    float: left;
+
+    margin: 20px 20px 10px 0;
+
+}
+
+.commentPost footer time{
+
+    /*font-family: 'Droid Serif';*/
+
+    text-transform: uppercase;
+
+}
+
+.commentPost p{
+
+    float: left;
+
+}
+
+#respond h3#reply-title{
+
+    font-size: 22px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    float: left; 
+
+    margin-top: 20px; 
+
+}
+
+#commentform{
+
+    float: left;
+
+    padding: 0px 30px 30px 0;
+
+    width: 570px;
+
+    /*margin-left: 100px;*/
+
+}
+
+#commentform p{
+
+    margin-bottom: 10px;
+
+}
+
+#commentform p.comment-notes{
+
+    margin-bottom: 10px;
+
+}
+
+#commentform p.comment-form-comment label{
+
+    display: block;
+
+}
+
+#commentform p.comment-form-comment textarea{
+
+    margin-left: 0;
+
+}
+
+#commentform p textarea{
+
+    width: 310px;
+
+    height: 100px;
+
+    border-radius: 3px;
+
+    background-color: #067064;
+
+    border: 1px solid #015159;
+
+    padding: 0;
+
+}
+
+#commentform p input{
+
+    width: 200px;
+
+    height: 22px;
+
+    display: block;
+
+    margin-right: 20px;
+
+    border-radius: 3px;
+
+    background-color: #067064;
+
+    border: 1px solid #015159;
+
+}
+
+#commentform p input#submit{
+
+    width: 110px;
+
+    height: 30px;
+
+    float: left;
+
+    /*padding: 6px 16px;*/
+
+    background-color: #067064;
+
+    border-radius: 3px;
+
+    -webkit-border-radius: 3px;
+
+    -moz-border-radius: 3px;
+
+    color: white;
+
+    font-size: 14px;
+
+    box-shadow: 0 0px 3px #015159;
+
+    padding-bottom: 3px;
+
+    clear: both;
+
+    margin-top: 20px;
+
+}
+
+#commentform p input#submit:hover{
+
+    box-shadow: 0 0 4px #015159;
+
+    cursor: pointer;
+
+}
+
+#commentform p.form-allowed-tags{
+
+    float: left;
+
+    display: none;
+
+}
+
+#commentform header h1{
+
+    font-size: 22px;
+
+}
+
+#commentform form{
+
+    float: left;
+
+    width: 570px;
+
+    margin-top:  20px;
+
+} 
+
+
+
+.comment{
+
+    font-weight: bold;
+
+
+
+    padding-bottom: 10px;
+
+    margin-top: 20px;
+
+}
+
+.comment footer div.comment-author img.avatar{
+
+    border: 1px solid #525252;
+
+    padding: 1px;
+
+    vertical-align: text-top;
+
+    width: 40px;
+
+    height: 40px;
+
+    margin-right: 10px;
+
+    margin-bottom: 10px;
+
+}
+
+.fn{
+
+    /*float: left;*/
+
+    /*margin: 0px 10px 10px 10px;*/
+
+}
+
+.fn a{
+
+    font-size: 15px;
+
+    color: #000;
+
+    font-weight: bold;
+
+
+
+}
+
+div.comment-author time{
+
+    font-size: 12px;
+
+    color: #fff;
+
+    font-weight: bold;
+
+}
+
+.comment-content p{
+
+    font-family: 'Droid Serif';
+
+    font-weight: normal;
+
+}
+
+
+
+.reply a{
+
+    color: firebrick;
+
+}
+
+.commentlist li{
+
+    border-bottom: 1px dashed;
+
+} 
+	body{font-size: 16px;}
+	h1{font-family: 'Anton'!important}
+	h1{background: #E91D63;
+    color: #fff!important;
+    height: auto;
+    padding: 30px 20px;
+    margin-top: 0!important;}
+	.postTitle a h1{color: #E91D63; font-family: 'Anton';font-size: 20px;}
+	time, p{font-family: 'Calibri'!important}
+	.gloria{color: #E91D63}
+	.postTitle a:hover{text-decoration: none}

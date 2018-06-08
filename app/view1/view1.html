@@ -1,0 +1,52 @@
+<div class="container" data-ng-init="init();">
+<header>
+	<h1 class='col-md-12'>NEWS: PROGRESSIVE WEB APP</h1>
+	<div class='row col-md-12' style='margin-bottom: 20px;'>
+		<div class='row col-md-6'>
+			<div class='col-md-4'>
+				<strong>Country </strong><select class="form-control" ng-model="countries.cou" ng-change="callNewsApi(countries.cou, categories.cat)" ng-options="template.code as template.name for template in countries.country"></select>
+			</div>
+			<div class='col-md-4'>
+				<strong>Category </strong><select class="form-control" ng-model="categories.cat" ng-change="callNewsApi(countries.cou, categories.cat)" ng-options="catg.type as catg.type for catg in categories.category"></select>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div ng-if='message' class="col-md-12 alert alert-danger" role="alert">
+  <h4 class="alert-heading">OOPS!</h4>
+  <p>Internet connection is down at the moment! Please try after sometime when internet is up.</p>
+  <hr>
+  <p class="mb-0"><b>You can still access some of the Offline pages.</b></p>
+</div>
+
+<div class="album py-5 bg-light">
+	<div class="container">
+	  <div class="row">
+		<div ng-if='spinner' class="loader">Loading...</div>
+		<div class="col-md-4" ng-repeat='article in articles'>
+		  <div class="card mb-4 box-shadow">
+			<img class="card-img-top"  alt="Thumbnail [100%x225]" ng-src="{{article.urlToImage || 'https://www.abnamro.nl/nl/mortgages/unauthenticated/web/Content/images/logo_abn134x30_gekoppeld.svg'}}" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+			<div class="card-body">
+				<header class="postTitle">
+					<a href="{{article.url}}" target='_blank'><h1>{{article.title || 'Lorem Ipsum'}}</h1></a>
+				</header>
+				<footer class="postMeta">
+		<h3>
+			<!--<i>by</i> 
+			<span class="postAuthor tipTip" title="see all posts from this author"><strong> <a href="http://www.convonix.com/blog/author/convonix/" title="Posts by SMG Convonix" rel="author">SMG Convonix</a></strong></span>	
+			<i>on</i>--> 
+			<strong><time class="postDate dtstart" datetime="">{{article.publishedAt | date}}&nbsp;|&nbsp;<span class='gloria'>by {{article.author || 'Anonymous'}}</span></time></strong>
+		</h3>
+		<!--<time class="dtstart" datetime="1992-01-12"> January 12th, 1992</time>-->
+	</footer>
+			<p class="card-text">{{article.description || "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."}}</p>
+			  
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+
